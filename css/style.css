@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(100, 93, 186);
+  font-family: sans-serif;
+}
+.container {
+  width: 81%;
+  background-color: white;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  height: 600px;
+}
+.card_1 {
+  height: 18%;
+}
+.logo {
+  float: left;
+  margin: 39px 39px;
+  font-size: 17px;
+  font-weight: bold;
+}
+label[for="bt_menu"] {
+  display: none;
+}
+label[for="bt_menu"] {
+  padding: 5px;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+#bt_menu {
+  display: none;
+}
+.menu {
+  display: block;
+}
+.menu a {
+  padding: 15px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  margin-left: 10px;
+}
+.menu a:hover {
+  color: white;
+  background-color: rgb(100, 93, 186);
+  border-radius: 35px;
+}
+.menu li:last-child{
+  margin-left: 0px;
+  background-color: rgb(196, 196, 248);
+  border-radius: 35px;
+} 
+.menu li a:last-child{
+  margin-left: 0px;
+} 
+.menu ul {
+  display: flex;
+  margin-right: 15px;
+  list-style: none;
+  position: relative;
+  float: right;
+  margin-right: 52px;
+  margin-top: 28px;
+}
+.menu ul li {
+  float: left;
+}
+.menu ul ul {
+  position: absolute;
+  visibility: hidden;
+}
+.card_2 {
+  display: flex;
+  margin: inherit;
+  margin-left: 12px;
+}
+.titulo {
+  margin-left: 15px;
+  margin-top: 28px;
+  margin-left: 32px;
+}
+h1 {
+  font-size: 70px;
+  color: rgb(18, 59, 79);
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 32px;
+  letter-spacing: 0.5rem;
+  margin-left: 3px;
+  text-transform: uppercase;
+  color: rgb(252, 167, 14);
+  font-weight: normal;
+  margin-bottom: 35px;
+}
+p {
+  line-height: 2;
+  flex-direction: column;
+  color: rgb(142, 142, 142);
+}
+button {
+  border-radius: 41px;
+  padding: 12px;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgb(196, 196, 248);
+  border: none;
+  outline: none;
+  margin-top: 44px;
+}
+button:hover {
+  background-color: rgb(100, 93, 186);
+  cursor: pointer;
+}
+img {
+  width: 544px;
+  margin: 25px 60px 6px 3px;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 75%;
+    height: 780px;
+    overflow-y: hidden;
+  }
+  .card_1 {
+    height: 10%;
+  }
+  label[for="bt_menu"] {
+    display: block;
+    float: right;
+    margin-top: 38px;
+  }
+  #bt_menu:checked ~ .menu {
+    margin-left: -800px;
+  }
+  .menu {
+    margin-left: 800px;
+    overflow: hidden;
+  }
+  .menu a {
+    color: #fff;
+  }
+  .menu ul {
+    display: grid;
+    margin-top: -1px;
+    overflow: hidden;
+    margin-right: -1px;
+    transition: all 0.1s;
+    background-color: #222;
+  }
+  .menu ul li {
+    width: 100%;
+    float: none;
+  }
+  .menu li a:last-child{
+    background-color: #222;
+  }
+  .card_2 {
+    flex-direction: column-reverse;
+    position: absolute;
+    width: 70%;
+  }
+  button {
+    background-color: rgb(100, 93, 186);;
+  }
+  img {
+    width: 289px;
+    align-self: center;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    height: 880px;
+  }
+  .card_2 {
+    position: inherit;
+    margin-left: -7px;
+  }
+  .menu a {
+    padding: 9px;
+  }
+  img {
+    align-self: center;
+    width: 200px;
+    margin-left: 87px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 86%;
+  }
+  h1 {
+    font-size: 61px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  img {
+    align-self: center;
+    width: 200px;
+    margin-left: 87px;
+  }
+}
